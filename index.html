@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Library</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1 class="page_title">MY LIBRARY</h1>
+
+        <button class="button open-button">New Book</button>
+
+        <dialog class="modal" id="modal">
+            <form class="book_add_form" method="dialog">
+                <label for="book_title">Book's Title:</label>
+                <input type="text" id="book_title" name="book_title"/>
+
+                <label for="book_author">Book's Author:</label>
+                <input type="text" id="book_author" name="book_author"/>
+
+                <label for="book_page">Book's number of pages:</label>
+                <input type="number" id="book_page" name="book_page"/>
+
+                <h2>Book's status:</h2>
+                <div>
+                    <label for="read">Read</label>
+                    <input type="radio" id="read" name="book_status" value="read" />
+                </div>
+
+                <div>
+                    <label for="not_read">Not Read</label>
+                    <input type="radio" id="not_read" name="book_status" value="Not Read" />
+                </div>
+
+                <button class="submit_button" type="submit">Submit</button>
+            </form>
+        </dialog>
+        
+        <div class="main_content">
+            
+        </div>
+    </body>
+</html>
