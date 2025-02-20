@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.page_title {
+    margin-top: 25px;
+}
+
+.open-button {
+    margin-top: 25px;
+    padding: 10px 25px 10px 25px;
+    font-weight: bold;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)   /*transform property moves the modal backward by half of its own width and height, bringing it perfectly into the center.*/
+}
+
+form {
+    margin: 10px;
+}
+
+
+.form-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    margin-bottom: 10px;
+}
+
+
+.form-1 label {
+    width: 250px;
+    font-weight: bold;
+}
+
+.form-2 {
+    margin-bottom: 10px;
+}
+
+form .submit_button {
+    display: flex;
+    padding: 5px 20px 5px 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.book_card {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    max-width: 500px;
+}
