@@ -1,49 +1,50 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <title>Library</title>
-        <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8">
+        <title> My Library</title>
+        <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
     </head>
     <body>
         <header>
-            <h1 class="page_title">FUNCTIONAL FOR NOW LIBRARY</h1>
-            <button class="open-button">New Book</button>
+            <h1>GAME TRACKER</h1>
+            <button class="new_game">New Game</button>
         </header>
 
         <dialog class="modal" id="modal">
-            <form class="book_add_form" method="dialog">
-                <div class="form-1">
-                    <label for="book_title">Book's Title:</label>
-                    <input type="text" id="book_title" name="book_title"/>
+            <form class="add_game_form" method="dialog">
+                <div class="game_details">
 
-                    <label for="book_author">Book's Author:</label>
-                    <input type="text" id="book_author" name="book_author"/>
+                    <label for="game_name">Game's Name:</label>
+                    <input type="text" id="game_name" name="game_name" placeholder="Half Life" />
 
-                    <label for="book_page">Book's number of pages:</label>
-                    <input type="number" id="book_page" name="book_page"/>
+                    <label for="game_dev">Developer:</label>
+                    <input type="text" id="game_dev" name="game_dev" placeholder="Valve" />
+
+                    <label for="playtime">Playtime(hours):</label>
+                    <input type="number" id="game_playtime" name="game_playtime" placeholder="11.5" />
+
+                    <label fpr="game_image">Add Cover Image</label>
+                    <input type="file" id="game_image" name="game_image" accept="image/*">
                 </div>
-                <div class="form-2">
-                    <h2>Book's status:</h2>
+                
+                <div class="game_status">
 
-                    <div>
-                        <label for="read">Read</label>
-                        <input type="radio" id="read" name="book_status" value="Read" />
-                    </div>
+                    <input type="radio" id="Played" name="clear_status" value="Played">
+                    <label for="Played">Played</label>
 
-                    <div>
-                        <label for="not_read">Not Read</label>
-                        <input type="radio" id="not_read" name="book_status" value="Not Read" />
-                    </div>
+                    <input type="radio" id="Not_played" name="clear_status" value="Not played">
+                    <label for="Not_played">Not played</label>
+
                 </div>
 
-                <button class="submit_button" type="submit">Submit</button>
+                <button class="submit_button" type="submit"> Add Game</button>
             </form>
         </dialog>
-        
-        <div class="main_content">
-            
+
+        <div class="game_pool">
+
         </div>
     </body>
 </html>
